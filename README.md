@@ -1,4 +1,4 @@
-# Connect-ESP32-with-Firebase-via-GSM
+# Connect-ESP32-to-Firebase-via-GSM
 Connect ESP32+GSM (Sim800l) to Google Firebase to send sensor data.
 
 # Background
