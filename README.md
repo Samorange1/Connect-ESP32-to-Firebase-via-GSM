@@ -9,8 +9,7 @@ As Firebase only accepts HTTPS requests, it becomes a bit difficult to send sens
 In this project, I develop an IoT application capable of sending data to the Firbase Real-Time database using GPRS and receiving the sent data using a Python script.
 We utilize the following components:
 - [LILYGO TTGO-TCALL ESP32+ Sim800L](https://github.com/Xinyuan-LilyGO/LilyGo-T-Call-SIM800): An excellent IOT module that utilizes ESP32 and SIM800L.The ESP32 has built-in capabilities of WiFI and Bluetooth.
-- Any sensor.
-- [General Accessories](https://www.amazon.in/gp/product/B01N1NNH8S/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1).
+
 
 #### Further Requirements - 
 - Create an account on [Firebase](https://firebase.google.com/) for data collection.
@@ -24,8 +23,7 @@ We utilize the following components:
 - Navigate to `Project Overview` and click `Realtime Database`. Then `Create Database`, select a preferable location for your database (doesn’t matter really) and enable `Test mode`.
 - Copy and save the database link (in a format: `https://xxxxx-xxxx-xxxx-xxxx.firebaseio.com/`) 
 - Proceed onto the `Project Settings` and under `Service Accounts` click `Database secrets` show and copy the `API KEY`. This is required for authentication in sending and extracting the data.
--   and add the PHP script. This creates a PHP server that accepts a `HTTP POST` request  and sends the data to Firebase.
--  Create an account on Website hosting platform. After signing up and setting a website, go to the folder `public.html` in the File manager and upload the files from the `PHP server folder`. This creates a PHP server that accepts an `HTTP POST` request  and sends the data to Firebase.
+-  Create an account on Website hosting platform. After signing up and setting a website, go to the folder `public.html` in the File manager and upload the files from the `PHP server` folder. This creates a PHP server that accepts an `HTTP POST` request  and sends the data to Firebase.
      > **NOTE: Do not upload the folder, just the files inside it.**
 -  Make the necessary changes in the `upload.php` file to add the details of the database link (`DEFAULT_URL`)and the API key (`DEFAULT_TOKEN`). Also, keep in mind the structure of the database the `$DEFAULT PATH` defines the variable under which the database will record the value. You can add additional paths by adding `/<variable_name>`.
 -  Create an Arduino script and copy the provided code. Do not forget to add the necessary details as indicated in the script. 
