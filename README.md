@@ -55,6 +55,7 @@ pip install python-firebase
 ```
 - Then copy this relevent information to the python script as indicated in the script.
 - Once you extract the data you can convert it to the required data type/ structure to perform your analysis.
+- Additionally you can review this [discussion](https://stackoverflow.com/questions/36528079/how-to-retrieve-data-from-firebase-using-python) on stackoverflow to understand the method.
 
 
 
